@@ -4,6 +4,7 @@ import { Link, Switch, Route } from 'react-router-dom';
 
 import About from './About';
 import Product from './Product';
+import Game from './Game';
 
 class Home extends Component {
 
@@ -69,11 +70,7 @@ class Home extends Component {
             <Switch>
               <Route path={`${this.props.match.path}/product`} component={Product}></Route>
               <Route path={`${this.props.match.path}/about`} component={About}></Route>
-              <Route render={ () => {
-                return (
-                  <div>欢迎加入 aicoder.com 大家庭！ </div>
-                )
-              }}></Route>
+              <Route component={Game}></Route>
             </Switch>
           </div>
         </main>

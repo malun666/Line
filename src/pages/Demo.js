@@ -23,6 +23,11 @@ function mapDispatchToProps(dispatch) {
 }
 
 class Demo extends Component {
+
+  componentWillMount() {
+    
+  }
+
   render() {
     return (
       <div>
